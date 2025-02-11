@@ -1,0 +1,433 @@
+/* Reset y estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor central */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #0A2540, #00A8E8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.logo span {
+  font-size: 2.5em;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #e0e0e0;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* Overlay oscuro para resaltar la imagen y evitar redundancia con el header */
+  background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+
+.hero-text h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Aplicar fuente Poppins a elementos hero-special */
+.hero-special {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  background: #00A8E8;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  background: #0086c9;
+  transform: translateY(-3px);
+}
+
+/* Sección de Funciones (Carrusel Horizontal Continuo) */
+.features {
+  padding: 20px 0;
+  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  position: relative;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 3em;
+  color: #0A2540;
+  font-weight: 700;
+}
+
+/* Panel del carrusel */
+.features-scroll {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  height: 280px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.features-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Grilla de Funciones */
+.features-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Tarjeta de Función */
+.feature-item {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 0 0 auto;
+  width: 300px;
+  height: 260px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  font-size: 5em;
+  color: #00A8E8;
+  margin-bottom: 10px;
+}
+
+.feature-item h3 {
+  font-size: 1.4em;
+  margin-bottom: 0;
+  color: #0A2540;
+  font-weight: 600;
+}
+
+/* Sección de Planes */
+.plans {
+  padding: 20px 0 40px 0;
+  background: linear-gradient(135deg, #e0e7f1, #ffffff);
+}
+
+.plans h2 {
+  text-align: center;
+  font-size: 3em;
+  color: #0A2540;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.plans-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 30px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #0A2540;
+  font-weight: 700;
+}
+
+/* Títulos especiales para los planes */
+.plan-card h3.special {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.plan-card p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.plan-features li {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.plan-features li i {
+  color: #00A8E8;
+  margin-right: 10px;
+}
+
+.plan-price {
+  font-size: 1.5em;
+  color: #0A2540;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.plan-price small {
+  font-size: 0.8em;
+  color: #777;
+}
+
+.plan-offer {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.plan-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.plan-btn:hover {
+  transform: translateY(-3px);
+}
+
+.free-plan .plan-btn {
+  background: #00A8E8;
+  color: #fff;
+}
+
+.premium-plan {
+  border: 2px solid #00A8E8;
+}
+
+.premium-plan .plan-btn {
+  background: #0A2540;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #0A2540;
+  color: #ccc;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.85em;
+}
+
+/* Efecto Fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 15px 0;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 2.5em;
+  }
+  
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+  
+  .features h2 {
+    font-size: 2em;
+  }
+  
+  .feature-item {
+    width: 200px;
+    height: 220px;
+  }
+  
+  .plans h2 {
+    font-size: 2.5em;
+  }
+  
+  .plan-card {
+    max-width: 100%;
+  }
+}
