@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deuda Libre - Software Financiero Corporativo</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Inter para el cuerpo y Poppins para encabezados especiales -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome para iconografía profesional -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="main-header">
+    <div class="container header-container">
+      <div class="logo">
+        <span>Deuda Libre</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#features">Funciones</a></li>
+          <li><a href="#plans">Planes</a></li>
+          <li><a href="#testimonials">Testimonios</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <!-- Se aplica la clase "hero-special" para usar la fuente Poppins -->
+        <h1 class="hero-special">Domina tus deudas con IA</h1>
+        <p class="hero-special">Finanzas inteligentes y control total</p>
+        <a href="#features" class="cta-button">Prueba Gratis 60 Días</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Funciones (Carrusel Horizontal Continuo) -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Funciones</h2>
+      <!-- Panel del carrusel ajustado a la altura exacta del contenido -->
+      <div class="features-scroll">
+        <div class="features-grid">
+          <div class="feature-item fade-in">
+            <i class="fa-solid fa-chart-line feature-icon"></i>
+            <h3>Monitoreo de Deudas</h3>
+          </div>
+          <div class="feature-item fade-in">
+            <i class="fa-solid fa-calculator feature-icon"></i>
+            <h3>Simulaciones</h3>
+          </div>
+          <div class="feature-item fade-in">
+            <i class="fa-solid fa-bell feature-icon"></i>
+            <h3>Alertas<br>Automáticas</h3>
+          </div>
+          <div class="feature-item fade-in">
+            <i class="fa-solid fa-university feature-icon"></i>
+            <h3>Integración Bancaria</h3>
+          </div>
+          <div class="feature-item fade-in">
+            <i class="fa-solid fa-chart-pie feature-icon"></i>
+            <h3>Reportes Financieros</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Planes -->
+  <section id="plans" class="plans">
+    <div class="container">
+      <h2>Planes Disponibles</h2>
+      <div class="plans-cards">
+        <!-- Plan Gratuito -->
+        <div class="plan-card free-plan">
+          <h3 class="special">Plan Gratuito</h3>
+          <p>Ideal para quienes inician el control de sus deudas sin costo.</p>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Monitoreo y gestión básica de deudas</li>
+            <li><i class="fa-solid fa-check"></i> Alertas automáticas</li>
+            <li><i class="fa-solid fa-check"></i> Registro de ingresos y egresos</li>
+            <li><i class="fa-solid fa-check"></i> Categorización de gastos</li>
+          </ul>
+          <div class="plan-price">
+            <span>Gratis</span> <small>(S/ 0)</small>
+          </div>
+          <a href="#" class="plan-btn">Empieza Gratis</a>
+        </div>
+        <!-- Plan Premium -->
+        <div class="plan-card premium-plan">
+          <h3 class="special">Plan Premium</h3>
+          <p>Optimiza tu gestión financiera con herramientas avanzadas y asesoramiento con IA.</p>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Todas las funciones del Plan Gratuito</li>
+            <li><i class="fa-solid fa-check"></i> Notificaciones inteligentes de pago</li>
+            <li><i class="fa-solid fa-check"></i> Reportes financieros automáticos</li>
+            <li><i class="fa-solid fa-check"></i> Simulaciones de escenarios</li>
+            <li><i class="fa-solid fa-check"></i> Integración con bancos</li>
+            <li><i class="fa-solid fa-check"></i> Asesoramiento con IA</li>
+          </ul>
+          <div class="plan-price">
+            <span>S/ 39.90/mes</span> <small>(20% de descuento en plan anual)</small>
+          </div>
+          <p class="plan-offer">Prueba gratis por 60 días</p>
+          <a href="#" class="plan-btn premium">Selecciona Plan Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nota: La sección "Testimonios" se mantiene referenciada en la navegación, pero no se muestra en esta página principal. -->
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container footer-container">
+      <div class="footer-links">
+        <a href="#privacy">Política de Privacidad</a> |
+        <a href="#terms">Términos y Condiciones</a>
+      </div>
+      <p class="copyright">
+        &copy; 2025 Deuda Libre. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
