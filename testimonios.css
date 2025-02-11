@@ -41,9 +41,10 @@ body {
   padding: 40px 0;
 }
 
+/* Se aumenta el ancho mínimo de cada recuadro para dar más espacio al correo */
 .testimonios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
 
@@ -52,7 +53,6 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  /* Se dispone en columna para que el ícono quede encima y el contenido debajo */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -62,7 +62,6 @@ body {
 .testimonial-icon {
   font-size: 2.5em;
   color: #00A8E8;
-  /* Centrado horizontal */
   align-self: center;
 }
 
@@ -71,14 +70,14 @@ body {
   word-break: break-word;
 }
 
-/* Modificación para que el correo se presente en una sola línea */
+/* Se ajusta el correo para que siempre se muestre en una sola línea */
 .testimonial-email {
   font-weight: 600;
   margin-bottom: 5px;
   color: #0A2540;
-  white-space: nowrap;       /* Impide el salto de línea */
-  overflow: hidden;          /* Oculta el contenido que exceda el ancho */
-  text-overflow: ellipsis;   /* Muestra puntos suspensivos si es muy largo */
+  white-space: nowrap;       /* Evita saltos de línea */
+  overflow: hidden;          /* Oculta el contenido extra si fuese necesario */
+  text-overflow: ellipsis;   /* Muestra puntos suspensivos si el recuadro es muy estrecho */
 }
 
 .testimonial-business {
