@@ -1,0 +1,100 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.registro-header {
+  background: linear-gradient(90deg, #0A2540, #00A8E8);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.registro-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.registro-header p {
+  font-size: 1.2em;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.subscription-form .form-group {
+  margin-bottom: 20px;
+}
+
+.subscription-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #0A2540;
+}
+
+.subscription-form input,
+.subscription-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.subscription-form input:focus,
+.subscription-form select:focus {
+  outline: none;
+  border-color: #00A8E8;
+  box-shadow: 0 0 5px rgba(0,168,232,0.5);
+}
+
+.btn-submit {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background: #00A8E8;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #0086c9;
+}
+
+/* Footer */
+footer {
+  background: #0A2540;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
