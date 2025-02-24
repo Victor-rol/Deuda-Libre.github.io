@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de Análisis - Deuda Libre</title>
+  <!-- Google Fonts: Inter y Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Archivo CSS para el panel -->
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="dashboard-header">
+    <div class="container">
+      <h1>Bienvenido a tu Panel de Análisis</h1>
+      <p>Optimiza tus finanzas cargando tus reportes y conecta tus cuentas (próximamente)</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección para subir archivos Excel -->
+    <section class="upload-section">
+      <div class="container">
+        <h2>Sube tus Reportes Financieros</h2>
+        <form id="excel-form">
+          <div class="form-group">
+            <label for="excel1">Subir Excel 1:</label>
+            <input type="file" id="excel1" name="excel1" accept=".xls,.xlsx" required>
+          </div>
+          <div class="form-group">
+            <label for="excel2">Subir Excel 2:</label>
+            <input type="file" id="excel2" name="excel2" accept=".xls,.xlsx" required>
+          </div>
+          <button type="submit" class="btn-analyze">Analizar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Sección para conexión bancaria (función próximamente habilitada) -->
+    <section class="coming-soon">
+      <div class="container">
+        <h2>Conexión Bancaria</h2>
+        <p>La funcionalidad para enlazar tu cuenta bancaria e interbancaria estará disponible próximamente.</p>
+        <button class="btn-disabled" disabled>Próximamente</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Deuda Libre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript para manejar el formulario de Excel -->
+  <script src="dashboard.js"></script>
+</body>
+</html>
