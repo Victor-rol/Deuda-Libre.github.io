@@ -1,0 +1,161 @@
+/* Reset y estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor central */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.dashboard-header {
+  background: linear-gradient(135deg, #0A2540, #00A8E8);
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.dashboard-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  font-size: 1.3em;
+  opacity: 0.9;
+}
+
+/* Sección para subir archivos */
+.upload-section {
+  padding: 60px 0;
+  background: #fff;
+  border-bottom: 1px solid #e0e7f1;
+}
+
+.upload-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0A2540;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
+}
+
+.upload-section p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1em;
+  color: #555;
+}
+
+#excel-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#excel-form:hover {
+  transform: scale(1.02);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0A2540;
+  font-size: 1.1em;
+}
+
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="file"]:focus {
+  outline: none;
+  border-color: #00A8E8;
+  box-shadow: 0 0 5px rgba(0,168,232,0.5);
+}
+
+.btn-analyze {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background: #00A8E8;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-analyze:hover {
+  background: #0086c9;
+  transform: translateY(-3px);
+}
+
+/* Sección de conexión bancaria (próximamente) */
+.coming-soon {
+  padding: 60px 0;
+  background: #e0e7f1;
+  text-align: center;
+}
+
+.coming-soon h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #0A2540;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.coming-soon p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.btn-disabled {
+  padding: 15px 30px;
+  background: #ccc;
+  color: #666;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  cursor: not-allowed;
+}
+
+/* Pie de página */
+footer {
+  background: #0A2540;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
