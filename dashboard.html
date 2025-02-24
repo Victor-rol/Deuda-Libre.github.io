@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Panel de Análisis - Deuda Libre</title>
+  <title>Panel Empresarial - Deuda Libre</title>
   <!-- Google Fonts: Inter y Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Archivo CSS para el panel -->
+  <!-- CSS para el panel -->
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Encabezado -->
   <header class="dashboard-header">
     <div class="container">
       <h1>Panel Empresarial</h1>
@@ -26,14 +26,14 @@
     <section class="upload-section">
       <div class="container">
         <h2>Sube tus Reportes Financieros</h2>
-        <p>Selecciona los archivos Excel que deseas analizar y obtén insights empresariales.</p>
+        <p>Selecciona los archivos Excel que deseas analizar para obtener insights empresariales.</p>
         <form id="excel-form">
           <div class="form-group">
-            <label for="excel1"><i class="fa-solid fa-file-excel"></i> Archivo Excel 1:</label>
+            <label for="excel1"><i class="fa-solid fa-file-excel"></i> Archivo Excel 1</label>
             <input type="file" id="excel1" name="excel1" accept=".xls,.xlsx" required>
           </div>
           <div class="form-group">
-            <label for="excel2"><i class="fa-solid fa-file-excel"></i> Archivo Excel 2:</label>
+            <label for="excel2"><i class="fa-solid fa-file-excel"></i> Archivo Excel 2</label>
             <input type="file" id="excel2" name="excel2" accept=".xls,.xlsx" required>
           </div>
           <button type="submit" class="btn-analyze">Analizar Reportes</button>
@@ -41,7 +41,7 @@
       </div>
     </section>
 
-    <!-- Sección para conexión bancaria (próximamente habilitada) -->
+    <!-- Sección para conexión bancaria (próximamente) -->
     <section class="coming-soon">
       <div class="container">
         <h2>Conexión Bancaria</h2>
@@ -51,7 +51,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Pie de página -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Deuda Libre. Todos los derechos reservados.</p>
@@ -59,33 +59,6 @@
   </footer>
 
   <!-- JavaScript para interacciones -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const excelForm = document.getElementById('excel-form');
-      
-      excelForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Validar que ambos archivos se hayan seleccionado
-        const file1 = document.getElementById('excel1').files[0];
-        const file2 = document.getElementById('excel2').files[0];
-        
-        if (!file1 || !file2) {
-          alert('Por favor, selecciona ambos archivos Excel.');
-          return;
-        }
-        
-        // Simulación del análisis: se puede agregar una función de carga o spinner
-        alert('Analizando los reportes financieros. Esto puede tardar unos segundos...');
-        
-        // Ejemplo: enviar los archivos mediante AJAX para análisis (lógica pendiente)
-        // let formData = new FormData(excelForm);
-        // fetch('/analizar', { method: 'POST', body: formData })
-        //   .then(response => response.json())
-        //   .then(data => console.log(data))
-        //   .catch(error => console.error('Error:', error));
-      });
-    });
-  </script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
