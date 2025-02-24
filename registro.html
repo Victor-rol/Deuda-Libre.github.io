@@ -24,7 +24,7 @@
   <main>
     <div class="form-container">
       <!-- Se ha modificado el action para redirigir a dashboard.html -->
-      <form action="dashboard.html" method="post" class="subscription-form">
+      <form action="dashboard.html" method="post" class="subscription-form" id="registration-form">
         <div class="form-group">
           <label for="nombre">Nombre Completo</label>
           <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
@@ -66,6 +66,27 @@
   </footer>
 
   <!-- Archivo JavaScript para validación y preselección del plan -->
-  <script src="registro.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('registration-form');
+      form.addEventListener('submit', function(e) {
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm_password').value;
+        if (password !== confirmPassword) {
+          e.preventDefault();
+          alert('Las contraseñas no coinciden. Por favor, verifica tus datos.');
+        }
+        // Si las contraseñas coinciden, el formulario se envía a dashboard.html
+      });
+
+      // Preseleccionar el plan según el parámetro recibido en la URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const planParam = urlParams.get('plan'); // Se espera "gratuito" o "premium"
+      if (planParam) {
+        const planSelect = document.getElementById('plan');
+        planSelect.value = planParam;
+      }
+    });
+  </script>
 </body>
 </html>
