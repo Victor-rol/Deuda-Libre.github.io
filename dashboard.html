@@ -15,8 +15,8 @@
   <!-- Header -->
   <header class="dashboard-header">
     <div class="container">
-      <h1>Bienvenido a tu Panel de Análisis</h1>
-      <p>Optimiza tus finanzas cargando tus reportes y conecta tus cuentas (próximamente)</p>
+      <h1>Panel Empresarial</h1>
+      <p>Gestiona y optimiza tus finanzas. Sube tus reportes y visualiza análisis inteligentes.</p>
     </div>
   </header>
 
@@ -26,25 +26,26 @@
     <section class="upload-section">
       <div class="container">
         <h2>Sube tus Reportes Financieros</h2>
+        <p>Selecciona los archivos Excel que deseas analizar y obtén insights empresariales.</p>
         <form id="excel-form">
           <div class="form-group">
-            <label for="excel1">Subir Excel 1:</label>
+            <label for="excel1"><i class="fa-solid fa-file-excel"></i> Archivo Excel 1:</label>
             <input type="file" id="excel1" name="excel1" accept=".xls,.xlsx" required>
           </div>
           <div class="form-group">
-            <label for="excel2">Subir Excel 2:</label>
+            <label for="excel2"><i class="fa-solid fa-file-excel"></i> Archivo Excel 2:</label>
             <input type="file" id="excel2" name="excel2" accept=".xls,.xlsx" required>
           </div>
-          <button type="submit" class="btn-analyze">Analizar</button>
+          <button type="submit" class="btn-analyze">Analizar Reportes</button>
         </form>
       </div>
     </section>
 
-    <!-- Sección para conexión bancaria (función próximamente habilitada) -->
+    <!-- Sección para conexión bancaria (próximamente habilitada) -->
     <section class="coming-soon">
       <div class="container">
         <h2>Conexión Bancaria</h2>
-        <p>La funcionalidad para enlazar tu cuenta bancaria e interbancaria estará disponible próximamente.</p>
+        <p>La integración para enlazar tu cuenta bancaria e interbancaria estará disponible próximamente. ¡Mantente atento!</p>
         <button class="btn-disabled" disabled>Próximamente</button>
       </div>
     </section>
@@ -57,7 +58,34 @@
     </div>
   </footer>
 
-  <!-- JavaScript para manejar el formulario de Excel -->
-  <script src="dashboard.js"></script>
+  <!-- JavaScript para interacciones -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const excelForm = document.getElementById('excel-form');
+      
+      excelForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validar que ambos archivos se hayan seleccionado
+        const file1 = document.getElementById('excel1').files[0];
+        const file2 = document.getElementById('excel2').files[0];
+        
+        if (!file1 || !file2) {
+          alert('Por favor, selecciona ambos archivos Excel.');
+          return;
+        }
+        
+        // Simulación del análisis: se puede agregar una función de carga o spinner
+        alert('Analizando los reportes financieros. Esto puede tardar unos segundos...');
+        
+        // Ejemplo: enviar los archivos mediante AJAX para análisis (lógica pendiente)
+        // let formData = new FormData(excelForm);
+        // fetch('/analizar', { method: 'POST', body: formData })
+        //   .then(response => response.json())
+        //   .then(data => console.log(data))
+        //   .catch(error => console.error('Error:', error));
+      });
+    });
+  </script>
 </body>
 </html>
