@@ -19,36 +19,36 @@ body {
 }
 
 /* Header */
-.testimonios-header {
+.comentarios-header {
   background: linear-gradient(90deg, #0A2540, #00A8E8);
   color: #fff;
   padding: 40px 0;
   text-align: center;
 }
 
-.testimonios-header h1 {
+.comentarios-header h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5em;
   margin-bottom: 10px;
 }
 
-.testimonios-header p {
+.comentarios-header p {
   font-size: 1.2em;
 }
 
-/* Listado de Testimonios */
-.testimonios-listado {
+/* Listado de Comentarios */
+.comentarios-listado {
   padding: 40px 0;
 }
 
 /* Se aumenta el ancho mínimo de cada recuadro para dar más espacio al correo */
-.testimonios-grid {
+.comentarios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
 
-.testimonial-card {
+.comentario-card {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -59,35 +59,35 @@ body {
   overflow: hidden;
 }
 
-.testimonial-icon {
+.comentario-icon {
   font-size: 2.5em;
   color: #00A8E8;
   align-self: center;
 }
 
-.testimonial-content {
+.comentario-content {
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
 /* Se ajusta el correo para que siempre se muestre en una sola línea */
-.testimonial-email {
+.comentario-email {
   font-weight: 600;
   margin-bottom: 5px;
   color: #0A2540;
-  white-space: nowrap;       /* Evita saltos de línea */
-  overflow: hidden;          /* Oculta el contenido extra si fuese necesario */
-  text-overflow: ellipsis;   /* Muestra puntos suspensivos si el recuadro es muy estrecho */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.testimonial-business {
+.comentario-business {
   font-size: 0.95em;
   color: #555;
   margin-bottom: 10px;
 }
 
-/* Estilos para el bloque del testimonio */
-.testimonial-content blockquote {
+/* Estilos para el bloque del comentario */
+.comentario-content blockquote {
   font-style: italic;
   color: #333;
   border-left: 3px solid #00A8E8;
@@ -98,13 +98,13 @@ body {
   white-space: normal;
 }
 
-/* Formulario de Testimonio */
-.enviar-testimonio {
+/* Formulario de Comentario */
+.enviar-comentario {
   background: #ffffff;
   padding: 40px 20px;
 }
 
-.enviar-testimonio h2 {
+.enviar-comentario h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #0A2540;
@@ -112,24 +112,24 @@ body {
   font-size: 2em;
 }
 
-.testimonial-form {
+.comentario-form {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.testimonial-form .form-group {
+.comentario-form .form-group {
   margin-bottom: 20px;
 }
 
-.testimonial-form label {
+.comentario-form label {
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
   color: #0A2540;
 }
 
-.testimonial-form input,
-.testimonial-form textarea {
+.comentario-form input,
+.comentario-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -137,8 +137,8 @@ body {
   font-size: 1em;
 }
 
-.testimonial-form input:focus,
-.testimonial-form textarea:focus {
+.comentario-form input:focus,
+.comentario-form textarea:focus {
   outline: none;
   border-color: #00A8E8;
   box-shadow: 0 0 5px rgba(0,168,232,0.5);
