@@ -1,0 +1,119 @@
+/* Reset y estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.sim-header {
+  background: linear-gradient(135deg, #0A2540, #00A8E8);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+.sim-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+.sim-header p {
+  font-size: 1.3em;
+  opacity: 0.9;
+}
+
+/* Sección de simulación (tablas e imágenes) */
+.sim-section {
+  padding: 40px 0;
+  background: #fff;
+  border-bottom: 1px solid #e0e7f1;
+}
+.sim-section h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
+  color: #0A2540;
+  margin-bottom: 20px;
+}
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.table-wrapper {
+  flex: 1 1 500px;
+  margin: 10px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead tr {
+  background: #00A8E8;
+  color: #fff;
+}
+table th, table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+table tbody tr.total {
+  font-weight: 700;
+  background: #e0e7f1;
+}
+.image-wrapper {
+  flex: 1 1 300px;
+  margin: 10px;
+  text-align: center;
+}
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Resultado del análisis */
+.sim-result {
+  padding: 40px 0;
+  background: #fff;
+  text-align: center;
+}
+.sim-result h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #0A2540;
+  margin-bottom: 20px;
+}
+.sim-result p {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Pie de página */
+footer {
+  background: #0A2540;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
