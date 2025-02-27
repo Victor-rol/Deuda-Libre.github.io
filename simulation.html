@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resumen Financiero - Panadería “Dulce Amanecer”</title>
+  <!-- Google Fonts: Inter y Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS para la simulación -->
+  <link rel="stylesheet" href="simulation.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="sim-header">
+    <div class="container">
+      <h1>Resumen Financiero</h1>
+      <p>Panadería “Dulce Amanecer”</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección de Compras -->
+    <section class="sim-section">
+      <div class="container">
+        <h2>Registro de Compras</h2>
+        <div class="content-wrapper">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Intervalo (días)</th>
+                  <th>Descripción</th>
+                  <th>Monto (S/)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 - 5</td>
+                  <td>Insumos básicos: harina, azúcar, levadura</td>
+                  <td>400</td>
+                </tr>
+                <tr>
+                  <td>6 - 10</td>
+                  <td>Reposición de empaques y materias primas</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td>11 - 15</td>
+                  <td>Productos perecibles: leche, huevos, etc.</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td>16 - 20</td>
+                  <td>Insumos adicionales y mantenimiento menor</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td>21 - 25</td>
+                  <td>Materia prima variada: chocolate, rellenos, frutas</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td>26 - 30</td>
+                  <td>Insumos finales + <strong>Pago del préstamo (S/ 500)</strong></td>
+                  <td>1,000</td>
+                </tr>
+                <tr class="total">
+                  <td colspan="2"><strong>Total Compras</strong></td>
+                  <td><strong>3,700</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="image-wrapper">
+            <img src="compras.jpg" alt="Registro de Compras">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Ventas -->
+    <section class="sim-section">
+      <div class="container">
+        <h2>Registro de Ventas</h2>
+        <div class="content-wrapper">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Intervalo (días)</th>
+                  <th>Descripción</th>
+                  <th>Monto (S/)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 - 5</td>
+                  <td>Ventas iniciales de productos variados</td>
+                  <td>900</td>
+                </tr>
+                <tr>
+                  <td>6 - 10</td>
+                  <td>Promociones de productos dulces</td>
+                  <td>1,200</td>
+                </tr>
+                <tr>
+                  <td>11 - 15</td>
+                  <td>Encargos especiales: tortas y postres</td>
+                  <td>1,300</td>
+                </tr>
+                <tr>
+                  <td>16 - 20</td>
+                  <td>Pedidos para eventos y ventas regulares</td>
+                  <td>1,200</td>
+                </tr>
+                <tr>
+                  <td>21 - 25</td>
+                  <td>Productos de temporada (ofertas)</td>
+                  <td>1,500</td>
+                </tr>
+                <tr>
+                  <td>26 - 30</td>
+                  <td>Incremento de pedidos por fin de mes</td>
+                  <td>2,000</td>
+                </tr>
+                <tr class="total">
+                  <td colspan="2"><strong>Total Ventas</strong></td>
+                  <td><strong>8,100</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="image-wrapper">
+            <img src="ventas.jpg" alt="Registro de Ventas">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultado del Análisis -->
+    <section class="sim-result">
+      <div class="container">
+        <h2>Resultado del Análisis</h2>
+        <p>
+          Tras analizar los datos, se observa que:
+          <br><br>
+          <strong>Total Compras:</strong> S/ 3,700<br>
+          <strong>Total Ventas:</strong> S/ 8,100<br><br>
+          Esto genera un margen bruto de S/ 4,400.
+          <br><br>
+          Del monto de S/ 1,000 en el último intervalo, S/ 500 se destinan al abono mensual del préstamo, lo que reduce la deuda de S/ 5,000 a S/ 4,500.
+          <br><br>
+          En conjunto, el margen obtenido es suficiente para cubrir gastos operativos y generar una rentabilidad que respalda la viabilidad del negocio.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Deuda Libre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript para interacciones futuras -->
+  <script src="simulation.js"></script>
+</body>
+</html>
