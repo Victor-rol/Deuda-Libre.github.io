@@ -13,19 +13,17 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
     
-    // Mostrar spinner o mensaje de carga (simulación)
-    const originalButtonText = document.querySelector('.btn-analyze').textContent;
+    // Mostrar mensaje de análisis (simulación)
     const btn = document.querySelector('.btn-analyze');
     btn.textContent = 'Analizando...';
     btn.disabled = true;
     
-    // Simulación de tiempo de análisis (por ejemplo, 3 segundos)
+    // Simulación del proceso de análisis y redirección tras 3 segundos
     setTimeout(() => {
-      alert('Análisis completado. Revisa tus reportes financieros.');
-      btn.textContent = originalButtonText;
-      btn.disabled = false;
+      // Redirigir a la página cuaternaria
+      window.location.href = "simulation.html";
     }, 3000);
     
-    // Aquí se puede agregar lógica AJAX para enviar los archivos al servidor
+    // Aquí se puede agregar lógica AJAX para enviar los archivos al servidor si se desea
   });
 });
